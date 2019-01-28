@@ -25,3 +25,5 @@ Sub FizzBuzz()
     Next i
     
 End Sub
+
+Note: This conditional for loop utilizes Mod to calculate the remainder if the numbers in the set conditional if "x" is not divisible by "y" (i.e. 24 to 5 = 4 because 5 goes into 24 five times, with a remainder of four)
