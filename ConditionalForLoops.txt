@@ -1,0 +1,27 @@
+---Conditional Loops---
+
+Sub FizzBuzz()
+
+    'Create a VBA Script that pupulates the second column with the word "Fizz", "Buzz", of "Fizzbuzz" based on the value in the first column
+    For i = 2 To 100
+    
+        If Cells(i, 1).Value Mod 3 = 0 And Cells(i, 1).Value Mod 5 = 0 Then
+        
+        'Enter "Fizzbuzz" in column 2
+        Cells(i, 2).Value = "Fizzbuzz"
+        
+        ElseIf Cells(i, 1).Value Mod 3 = 0 Then
+        
+        'Enter "Fizz" in column 2
+        Cells(i, 2).Value = "Fizz"
+        
+        ElseIf Cells(i, 1).Value Mod 5 = 0 Then
+        
+        'Enter "Buzz" in column 2
+        Cells(i, 2).Value = "Buzz"
+    
+    End If
+    
+    Next i
+    
+End Sub
